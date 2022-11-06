@@ -1,9 +1,7 @@
-// 조건문 ( Conditional Statement )
 // switch => 정해진 범위안의 값에 대해 특정한 일을 해야할 때 사용.
 // 각각의 case는 break 를 항상 걸어줘야 함.
-// if else if else ,,, else
 
-let day = 11; // 0 : 월요일, 1 : 화요일, 2 : 수요일 ,,, 6 : 일요일.
+let day = 4; // 0 : 월요일, 1 : 화요일, 2 : 수요일 ,,, 6 : 일요일.
 let dayName;
 
 switch (day) {
@@ -33,10 +31,9 @@ switch (day) {
 }
 console.log(dayName);
 
-let condition = 'okay';
+let condition = 'good';
 let text;
 switch (condition) {
-  case 'okay':
   case 'good':
     text = '좋음!';
     break;

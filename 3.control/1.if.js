@@ -1,17 +1,13 @@
-// 조건문 ( Conditional Statement )
-// if(조건) { }
-// if(조건) { } else { }
-// if(조건1) { } else if(조건2) { } else { }
+// 조건문 형식
+// 1. if(조건) { }
+// 2. if(조건) { } else { }
+// 3. if(조건) { } else if() { } else { }
 
-let fruit = 'applea';
-if (fruit === 'apple') {
-  console.log('apple!');
-} else if (fruit === 'orange') {
-  console.log('orange');
+let pratice = 'b';
+if (pratice === 'a') {
+  console.log('a');
+} else if (pratice === 'b') {
+  console.log('b');
 } else {
-  console.log('fruit no');
-}
-
-if (2 < 1) {
-  console.log('출력되면 안됨!');
+  console.log('c');
 }
