@@ -45,3 +45,9 @@ Cat.prototype.play = () => {
 const cat1 = new Cat('고양이', 1);
 cat1.helloAnimal();
 cat1.play();
+
+// ----------------------------------------------------------------------
+
+console.log(poodle instanceof Animal); // true
+console.log(poodle instanceof Dog); // true
+console.log(poodle instanceof Cat);
