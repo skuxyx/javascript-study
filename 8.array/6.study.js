@@ -7,25 +7,34 @@
 // 메서드란 ?
 // => 객체에 들어있는 함수.
 
-// 많이 사용하는 내장 고차함수 정리.
+// [ 중요 ] 많이 사용하는 내장 고차함수 정리
+// filter => 배열의 각 요소가 특정 함수 조건을 통과할 때('true') 새로운 배열로 반환.
+// => 조건을 통과한 요소가 없을 경우 빈 배열 반환.
 
-// filter => 배열의 각 요소가 특정 함수에 따라, 'true'일 때 따로 분류.
+let num = [1, 2, 3, 4, 5, 6];
 
-let num1 = [1, 2, 3, 4, 5, 6];
-
-let numFilter = num1.filter((number) => {
-  return number % 2 === 0;
+let numFilter = num.filter((number) => {
+  return number % 2 === 0; // 2로 나눴을 때 0인 값만 모아서.
 });
-console.log(numFilter); // [2, 4, 6 ]
+console.log(numFilter); // [2, 4, 6]
 
-// map => 모든 요소에 동일한 행동을 준 값을 반환, 배열의 각 요소가 특정 함수에 의해 다른 요소로 지정됨.
+let animal = ['bichon', 'poodle', 'maltese', 'dog', 'cat'];
+let animalFilter = animal.filter((word) => word.length > 4); // 4 이상인 단어만 모아서 반환.
+console.log(animalFilter);
+
+// ---------------------------------------------------------------------
+
+// map => 배열 내 모든 요소에 동일한 행동을 준 값을 반환.
+// 새로운 배열을 모아서 반환.
 
 let num2 = [1, 2, 3, 4, 5];
 
 let result = num2.map((number2) => {
   return number2 * 2;
 });
-console.log(result); // [ 2, 4, 6, 8, 10 ]
+console.log(result); // [2, 4, 6, 8, 10]
+
+// ---------------------------------------------------------------------
 
 // reduce => 배열을 하나의 값으로 만들어 줌.
 //        => 배열의 요소를 특정 함수에 따라, '하나'의 형태로.
@@ -37,4 +46,4 @@ let num3 = [1, 2, 3];
 let numReduce = num3.reduce((a, b) => {
   return a + b;
 }, 1); // 초기값 1
-console.log(numReduce);
+console.log(numReduce); // 1 + 1 = 2, 2 + 2 = 4, 4 + 3 = 7.
