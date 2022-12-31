@@ -56,4 +56,7 @@ console.log(Object.values(obj2)); // [ 'pratice', 20, 'yongin' ]
 // Object.entries() => 객체의 키, 값을 배열로 반환.
 console.log(Object.entries(obj2)); // [ [ 'name', 'pratice' ], [ 'age', 20 ], [ 'city', 'yongin' ] ]
 
-// ---------------------------------------------------------
+// for.. in 을 이용해서 객체 키,값을 받아올 수 있음.
+for (let key in obj2) {
+  console.log(key, obj2[key]);
+}
