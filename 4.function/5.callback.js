@@ -1,5 +1,6 @@
 // 함수의 parameter 로 들어가는 함수로, 함수 내부에서 실행되는 함수를 의미한다.
-// 당장 사용되는 것이 아닌,
+// => 당장 사용되는 것이 아닌, 때가되면 호출하겠다.
+
 function animal(mood, callback, callback2) {
   if (mood === 'happy') {
     callback();
